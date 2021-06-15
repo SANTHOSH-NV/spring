@@ -20,8 +20,11 @@ public class DataBase {
 	@NonNull
 	private String password;
 	
+	
+	private String name;
+	
 	public void init() {
-		System.out.println("Data Base is Created");
+		System.out.println("Data Base Class is Created");
 	}
 
 }

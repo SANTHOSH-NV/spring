@@ -7,25 +7,25 @@
 
           <bean  class="com.xworkz.chocolate.Chocolate" id="chocolate">
  
-         <constructor-arg name="name"  value ="${name}"></constructor-arg> 
-         <constructor-arg name="brand" value="${brand}"></constructor-arg>
+         <constructor-arg name="name"  value ="${Chocolate.name}"/> 
+         <constructor-arg name="brand" value="${Chocolate.brand}"/>
          
-         <property name="size" value="medium"></property>
-         <property name="price" value="20.00"></property>
+         <property name="size" value="medium"/>
+         <property name="price" value="20.00"/>
          
          </bean>
          
          
          <bean class="com.xworkz.chocolate.DataBase" id="database">
-         <constructor-arg name="url" value="${url}"></constructor-arg>
-         <constructor-arg name="userName" value="${userName}"></constructor-arg>
-        <constructor-arg name="password" value="${password}"></constructor-arg>
+         <constructor-arg name="url" value="${database.url}"/>
+         <constructor-arg name="userName" value="${database.userName}"/>
+        <constructor-arg name="password" value="${database.password}"/>
          
          
          </bean>
          
          <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="propertyPlaceholderConfigurer">
-         <property name="location" value="application.properties"></property>
+         <property name="location" value="application.properties"/>
 
          </bean>
          

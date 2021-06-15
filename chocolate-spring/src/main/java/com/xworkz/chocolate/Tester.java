@@ -25,5 +25,8 @@ public class Tester {
 
 		bean2.init();
 
+		ClassPathXmlApplicationContext classPathXmlApplicationContext = (ClassPathXmlApplicationContext)container;
+		classPathXmlApplicationContext.close();
+
 	}
 }
