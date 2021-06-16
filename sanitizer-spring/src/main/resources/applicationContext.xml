@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.xworkz.sanitizer.Sanitizer" id="santizer">
+		<constructor-arg name="name" value="Lifebouy" />
+		<constructor-arg name="quantity" value="200ML" />
+		<constructor-arg name="color" value="blue" />
+		<constructor-arg name="price" value="200" />
+		<constructor-arg name="ingredients" ref="ingredient" />
+		<constructor-arg name="isAyurvedic" value="false" />
+
+	</bean>
+
+
+
+	<bean class="com.xworkz.sanitizer.Ingredients" id="ingredient">
+		<constructor-arg name="alcohol" value="IsopropylAlcohol" />
+		<constructor-arg name="alcoholPercentage" value="79" />
+		<constructor-arg name="peroxide" value="HydrogenPeroxide" />
+		<constructor-arg name="peroxidePercentage" value="0.125" />
+		<constructor-arg name="distilledWaterPercentage" value="20" />
+
+	</bean>
+
+</beans>
