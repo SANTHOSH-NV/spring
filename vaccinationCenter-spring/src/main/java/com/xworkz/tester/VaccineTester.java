@@ -13,7 +13,7 @@ public class VaccineTester {
 
 		VaccinationCenter bean = container.getBean(VaccinationCenter.class);
 		System.out.println(bean);
-
+		
 		ClassPathXmlApplicationContext classPathXmlApplicationContext = (ClassPathXmlApplicationContext) container;
 
 		classPathXmlApplicationContext.close();
